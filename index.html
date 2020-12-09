@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <title>Git notities</title>
 </head>
-<body style="margin-left: 1%">
-<h1>Notities van de Git workshop</h1>
-<P>
-<div>
-    //bestand maken om aan te geven welke bestanden of mappen niet worden meegenomen<br>
-    //dit is een nieuw bestand met de naam:<br/>
-    <b>.gitignore</b>
+<body>
+<div style="margin-left: 1%">
+    <h1>Notities van de Git workshop</h1>
+    <p>
+        //bestand maken om aan te geven welke bestanden of mappen niet worden meegenomen<br>
+        //dit is een nieuw bestand met de naam:<br/>
+        <b>.gitignore</b>
+    </P>
 </div>
 <hr>
-</P>
 
-<div>
+
+<div style="margin-left: 1%">
     <h2>Git commandos</h2>
     <P>//Statys van de huidige bestanden<br/>
         <b>git status</b><br/>
@@ -31,9 +32,29 @@
         <b>git commit -m "Eerste setup"</b><br/>
     </P>
     <P>
-        //om de cache te legen.
-        - zit er per ongeluk toch nog .idea tussen? git rm -r cashed
+        //om een <i>cached</i> te legen.<br/>
+        - zit er per ongeluk toch nog bijvoorbeeld '<u>.idea</u>' tussen?<br/>
+        <b>git rm -r --cached .idea</b><br/>
     </P>
+</div>
+    <hr>
+<div  style="margin-left: 1%">
+    <h2>Je bestanden naar je repository op Git sturen</h2>
+    <p>
+        //toevoegen van je git repoistory voor dit project<br/>
+        //dit hoeft maar één keer in het project<br/>
+        <b>git remote add origin https://github.com/Calamiteit/NOVItest.git</b><br/>
+    </p>
+    <p>
+        //om je project naar Git te sturen gebruik je onderstaande code.<br/>
+        //er zijn ook 2 andere commando's die staan als comment in het html bestand.<br/>
+        <!--    git push origin master-->
+        <!--    git push origin main -->
+        <b>git branch -M main</b><br/>
+        <b>git push -u origin main</b><br/>
+
+    </p>
+
 </div>
 
 </body>
