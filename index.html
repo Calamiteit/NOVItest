@@ -15,7 +15,6 @@
 </div>
 <hr>
 
-
 <div style="margin-left: 1%">
     <h2>Git commandos</h2>
     <P>// Statys van de huidige bestanden<br/>
@@ -37,8 +36,8 @@
         <b>git rm -r --cached .idea</b><br/>
     </P>
 </div>
-    <hr>
-<div  style="margin-left: 1%">
+<hr>
+<div style="margin-left: 1%">
     <h2>Je bestanden naar je repository op Git sturen</h2>
     <p>
         // Toevoegen van je git repoistory voor dit project<br/>
@@ -52,9 +51,26 @@
         <!--    git push origin main -->
         <b>git branch -M main</b><br/>
         <b>git push -u origin main</b><br/>
+    <hr>
+</div>
+<div>
+    <p>
+        // een lokale commit ongedaan maken
+        git reset HEAD
 
-    </p>
+        // nieuwe branch maken en wisselen:
+        git checkout -b feature/'featurenaam'
 
+        // wisselen van branch
+        git checkout 'branchname'
+
+        // tijdelijk je bestanden wegzetten om bv. op een andere feature te zetten
+        git stash
+
+        // gestashte files in de huidige feature zetten
+        git stash apply
+
+    <p></p>
 </div>
 
 </body>
